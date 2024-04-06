@@ -1,0 +1,92 @@
+body {
+    background-color: #020202;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url("/obrázky/header-background2.png");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 150px;
+    margin-left: 4vw;
+}
+
+.header-text {
+    margin-right: 4vw;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Inter;
+    color: white;
+}
+
+main {
+    font-family: Inter;
+    color: white;
+    margin-left: 18vw;
+    margin-right: 18vw;
+    margin-top: 30px;
+    position: relative;
+    top: -100px;
+}
+
+.site-info {
+    background-color: #250D2B;
+    display: flex;
+    align-items: center;
+    padding: 20px 2vw;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fa-info, .fa-house, .fa-medal{
+    margin-right: 2vw;
+    font-size: 30px;
+}
+
+.site-content{
+    background-color: #121212;
+    height: 800px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .header-text {
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 20px;
+    }
+}
