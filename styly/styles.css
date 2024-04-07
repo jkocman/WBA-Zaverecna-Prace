@@ -64,11 +64,6 @@ main {
     border-top-right-radius: 10px;
 }
 
-.fa-info, .fa-house, .fa-medal{
-    margin-right: 2vw;
-    font-size: 30px;
-}
-
 .site-content{
     background-color: #121212;
     height: 800px;
