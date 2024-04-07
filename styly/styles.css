@@ -6,7 +6,7 @@ body {
 
 header {
     background-image: url("/obrázky/header-background2.png");
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     height: 300px;
     background-position: center;
@@ -27,21 +27,26 @@ header {
 }
 
 .logo {
-    height: 150px;
+    height: 170px;
     margin-left: 4vw;
 }
 
 .header-text {
     margin-right: 4vw;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     font-family: Inter;
     color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.452);
+}
+.header-text:hover{
+    color: rgb(207, 177, 255);
 }
 
 main {
     font-family: Inter;
     color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.452);
     margin-left: 18vw;
     margin-right: 18vw;
     margin-top: 30px;
@@ -54,7 +59,7 @@ main {
     display: flex;
     align-items: center;
     padding: 20px 2vw;
-    font-size: 20px;
+    font-size: 25px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -69,24 +74,30 @@ main {
     height: 800px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-bottom: 100px;
+    box-shadow: 0px 0px 5px 5px #32115c2a;
 }
-
-@media screen and (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        margin: 0;
-    }
-
-    .header-text {
-        margin: 10px 0;
-    }
-
-    main {
-        margin: 20px;
-    }
+.footer{
+    background-color: black;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact{
+    margin-left: 18vw;
+    font-family: Inter;
+    font-size: 18px;
+}
+.footer-icons{
+    margin-right: 18vw;
+    font-family: Inter;
+    font-size: 30px;
+}
+.fa-instagram{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.fa-reddit{
+    cursor: pointer;
 }
