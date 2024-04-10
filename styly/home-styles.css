@@ -2,3 +2,55 @@
     margin-right: 2vw;
     font-size: 30px;
 }
+.heading-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.fa-list{
+    margin-right: 20px;
+    font-size: 35px;
+}
+h2{
+    font-size: 25px;
+}
+.info-block{
+    background-color: rgb(45, 45, 45);
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+.illustration-image{
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 10px;
+}
+.button-container{
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+.more-button{
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    padding: 5px 40px;
+    border-radius: 8px;
+}
+.discription-container{
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
