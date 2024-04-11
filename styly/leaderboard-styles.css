@@ -2,3 +2,18 @@
     margin-right: 2vw;
     font-size: 30px;
 }
+.heading-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 6vw;
+    margin-bottom: 500px;
+}
+.fa-ranking-star{
+    margin-right: 20px;
+    font-size: 35px;
+}
+h2{
+    font-size: 30px;
+}
