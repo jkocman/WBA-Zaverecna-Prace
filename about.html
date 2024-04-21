@@ -23,7 +23,7 @@
                 <img class="logo" src="obrázky/71skjg3qklec1.png" alt="Nelze Načíst">
             </section>
             <nav class="navigation">
-                <ul>
+                <ul class="nav-bar">
                     <li>
                         <a class="header-text" href="index.html">domů</a>
                     </li>
@@ -48,6 +48,136 @@
                     <i class="fa-solid fa-newspaper"></i>
                     <h2>zjistěte více o hře</h2>
                 </section>
+                <section>
+                    <img class="illustration-image" src="obrázky/illustration-image2.png" alt="">
+                </section>
+                <article class="info-about-game-article">
+                    <section class="article-heading-container">
+                        <h2 class="article-heading">skóre</h2>
+                        <div class="decoration-stripe"></div>
+                    </section>
+                    <section class="info-about-game-container">
+                        <p>
+                            Skóre v osu! je číselná hodnota podle které se řadí hráči do tabulky nejlepších výkonů na mapě.
+                            V osu existují dva typy počítání skóre "score v1", které se používá při normálním hraní a "score v2", které se používá
+                            v turnajích. My se ale zaměříme na "score v1", jelikož s tím se hráči potkají nejčastěji 
+                        </p>
+                        <p>
+                            Skóre je udělováno podle trefeného objeku, ale každý objekt je počítán trochu jinak.
+                            Pravidla udělování skóre podle každého objektu jsou vysvětlena níže.
+                        </p>
+                        <section>
+                            <h3>Kolečka</h3>
+                            <p>
+                                Skóre z trefení kolečka se počítá pomocí této rovnice:
+                            </p>
+                            <p>
+                                Score = Hit value * (1 + (Combo multiplier * Difficulty multiplier * Mod multiplier / 25))
+                            </p>
+                            <ul>
+                                <li>Hit value je hodnocení trefení kolečka, může být v hodnotě 50, 100 nebo 300</li>
+                                <li>Combo multiplier je rovno combu před trefením kolečka - 1</li>
+                                <li>Difficulty multiplier záleží na mapě která je zrovna hraná. Přesná rovnice je uvedena níže</li>
+                                <li>Mod multiplier je totalní hodnota módů, které jsou aktivní při hraní beatmapy, některé mody mají 1,06 a jiné 1,12</li>
+                            </ul>
+                            <section>
+                                <h4>Difficulty multiplier</h4>
+                                <p>
+                                    Difficulty multiplier se počítá podle této rovnice:
+                                </p>
+                                <p>Difficulty multiplier = Round((HP Drain + Circle Size + Overall Difficulty + Clamp(Hit object count / Drain time in seconds * 8, 0, 16)) / 38 * 5)</p>
+                            </section>
+                        </section>
+                        <section>
+                            <h3>Slidery</h3>
+                            <p>
+                                Každý slider má hodnocení 50, 100 nebo 300, podle toho kolik částí slideru je trefeno
+                                (jmenovitě, hlava slideru, konec slideru, tick slideru a opakování slideru). Toto je pak konvertováno na skóre podle stejné rovnice,
+                                kterou používají kolečka.
+                            </p>
+                            <p>
+                                Prvky slideru navíc udělují skóre nezávislým způsobem, bez vlivu jakýchkoli bonusů nebo multiplierů:
+                            </p>
+                            <ul>
+                                <li>každý trefený slider tick je 10 bodů do celkového skóre</li>
+                                <li>každé opakování slideru nebo konec slideru je 30 bodů do celkového skóre</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Spinery</h3>
+                            <p>
+                                Spinery mají hodnocení 50, 100 nebo 300, podle toho, jak blízko je spinner k dokončení.
+                                Toto je pak konvertováno na skóre podle stejné rovnice, kterou používají kolečka.
+                            </p>
+                            <p>
+                                Otočení slideru taky uděluje skóre nezávisle podobně jako slidery
+                            </p>
+                            <ul>
+                                <li>Každé otočení před dokončením spineru je 100 bodů do celkového skóre</li>
+                                <li>Každé otočení po dokončení spineru je 1000 bodů do celkového skóre</li>
+                            </ul>
+                        </section>
+                    </section>
+                </article>
+                <article class="info-about-game-article">
+                    <section class="article-heading-container">
+                        <h2 class="article-heading">přesnost</h2>
+                        <div class="decoration-stripe"></div>
+                    </section>
+                    <section class="info-about-game-container">
+                        <p>Přesnost je procentuální měřič hráčovi schopnosti trefovat objekty v čase kdy má.</p>
+                        <p>Přesnost se měří podle hodnocení z každého objektu (50, 100 nebo 300) a vydělení maximální hodnotou.</p>
+                        <p>Za jeden zásah kolečka:</p>
+                        <ul>
+                            <li>300 -> 300 / 300 = 1   = 100.00%</li>
+                            <li>100 -> 100 / 300 = 1/3 =  33.33%</li>
+                            <li>50  ->  50 / 300 = 1/6 =  16.67%</li>
+                            <li>0   ->   0 / 300 = 0   =   0.00%</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="info-about-game-article">
+                    <section class="article-heading-container">
+                        <h2 class="article-heading">výkonnostní body</h2>
+                        <div class="decoration-stripe"></div>
+                    </section>
+                    <section class="info-about-game-container">
+                        <p>výkonnostní body neboli "performance points" je metrika podle které jsou hráči rankováni do celkového žebříčku v osu!</p>
+                        <section>
+                            <h3>Výpočet</h3>
+                            <p>
+                                Výkonnostní body jsou silně založeny na vypočítané obtížnosti beatmap, která je určena jedinečným algoritmem vytvořeným pro každý jednotlivý herní režim .
+                                Obtížnost beatmapy, na které hráč hraje, určuje konečnou hodnotu pp jejich skóre. Podle návrhu se vzorec opírá o čtyři základní hodnoty: aim, speed accuracy, a strain. Všechny z nich jsou pak kombinovány v různých velikostech,
+                                aby se vytvořilo celkové skóre, které se vztahuje ke konkrétní obtížnosti beatmapy a individuálnímu výkonu hráče v dané beatmapě.
+                            </p>
+                            <section>
+                                <h4>Aim</h4>
+                                <p>Aim je základní hodnotou, která zvažuje, jak obtížné je konzistentně zasáhnout po sobě jdoucí noty v beatmapě.</p>
+                            </section>
+                            <section>
+                                <h4>Speed</h4>
+                                <p>Speed je základní hodnotou, která určuje jak rychle se objekty v beatmapě zjevují.</p>
+                            </section>
+                            <section>
+                                <h4>Accuracy</h4>
+                                <p>Accuracy je procentuální míra schopnosti hráče zasáhnout včas zasažené předměty ; pokud jde o algoritmus pp, je to také základní hodnota, která se používá k hodnocení individuálního výkonu hráče na beatmapě.</p>
+                            </section>
+                            <section>
+                                <h4>Strain</h4>
+                                <p>Strain je základní hodnota, která zohledňuje, kolikrát a jak dlouho je hráč vystaven vysoce intenzivním sekcím v rámci konkrétní beatmapy.</p>
+                            </section>
+                        </section>
+                    </section>
+                </article>
+                <article class="info-about-game-article">
+                    <section class="article-heading-container">
+                        <h2 class="article-heading">combo</h2>
+                        <div class="decoration-stripe"></div>
+                    </section>
+                    <section class="info-about-game-container">
+                        <p>Combo je počet trefených objektů za sebou. Je zásadní pro počítání skóre</p>
+                    </section>
+                </article>
             </section>
         </section>
     </main>

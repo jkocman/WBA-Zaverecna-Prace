@@ -12,6 +12,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
 
 .flex-container {
@@ -26,7 +27,7 @@ nav {
     align-items: center;
 }
 
-ul{
+.nav-bar{
     display: flex;
 }
 

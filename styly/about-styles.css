@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     margin-left: 6vw;
-    margin-bottom: 500px;
 }
 .fa-newspaper{
     margin-right: 20px;
@@ -16,4 +15,52 @@
 }
 h2{
     font-size: 30px;
+}
+.illustration-image{
+    margin-left: 6vw;
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.info-about-game-article{
+    margin-left: 6vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.4;
+}
+.decoration-stripe{
+    background-color: blueviolet;
+    height: 5px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+.article-heading-container{
+    display: flex;
+    flex-direction: column;
+}
+.info-about-game-container p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.info-about-game-container h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.info-about-game-article h4{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.info-about-game-container ul{
+    margin-bottom: 20px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.info-about-game-container li{
+    font-size: 18px;
 }
