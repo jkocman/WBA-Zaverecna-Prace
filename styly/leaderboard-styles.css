@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     margin-left: 6vw;
-    margin-bottom: 500px;
 }
 .fa-ranking-star{
     margin-right: 20px;
@@ -16,4 +15,28 @@
 }
 h2{
     font-size: 30px;
+}
+.leaderboard{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.leaderboard-player{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 129, 255);
+    font-size: 20px;
+}
+.player-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flag-image{
+    width: 70px;
+    border-radius: 8px;
 }
