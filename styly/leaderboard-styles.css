@@ -25,10 +25,18 @@ h2{
     justify-content: space-between;
     background-color: rgb(209, 129, 255);
     font-size: 20px;
+    padding: 5px 10px;
+}
+.leaderboard-player:nth-child(2n){
+    background-color: rgb(92, 33, 126);
+}
+.leaderboard-player:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .player-info{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 40px 60px 30px;
     align-items: center;
 }
 .player-stats{
@@ -37,6 +45,18 @@ h2{
     align-items: center;
 }
 .flag-image{
-    width: 70px;
+    width: 55px;
     border-radius: 8px;
+}
+.accuracy{
+    margin-right: 10px;
+}
+.leaderboard-explanation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px 20px;
+}
+.explanation-accuracy{
+    margin-right: 25px;
 }
