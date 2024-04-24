@@ -4,7 +4,7 @@ body {
     flex-direction: column;
 }
 
-header {
+.top-header {
     background-image: url("/obrázky/header-background2.png");
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
@@ -14,11 +14,28 @@ header {
     background-size: cover;
     object-fit: cover;
 }
-
-.flex-container {
+.scroll-header{
+    background-color: rgba(255, 116, 237, 0.29);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    z-index: 20;
+    height: 100px;
+}
+.scroll-header-container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.top-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 200px;
 }
 
@@ -29,17 +46,22 @@ nav {
 
 .nav-bar{
     display: flex;
+    margin-right: 210px;
 }
 
 .logo {
-    height: 170px;
-    margin-left: 4vw;
+    height: 120px;
+    margin-left: 250px;
+}
+.scroll-logo{
+    height: 70px;
+    margin-left: 250px;
 }
 
 .header-text {
-    margin-right: 4vw;
+    margin-right: 40px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Inter;
     color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.452);
@@ -52,8 +74,8 @@ main {
     font-family: Inter;
     color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.452);
-    margin-left: 18vw;
-    margin-right: 18vw;
+    margin-left: 250px;
+    margin-right: 250px;
     margin-top: 30px;
     position: relative;
     top: -100px;
@@ -85,12 +107,12 @@ main {
     justify-content: space-between;
 }
 .contact{
-    margin-left: 18vw;
+    margin-left: 250px;
     font-family: Inter;
     font-size: 18px;
 }
 .footer-icons{
-    margin-right: 18vw;
+    margin-right: 250px;
     font-family: Inter;
     font-size: 30px;
 }
