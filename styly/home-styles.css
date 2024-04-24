@@ -80,3 +80,17 @@ h3{
 .discription{
     line-height: 1.5;
 }
+.site-content{
+    padding-bottom: 10px;
+}
+@media(max-width: 757px){
+    .illustration-image-container1 {
+        background-position: -70px;
+    }
+}
+@media(max-width: 417px){
+    .more-button{
+        font-size: 18px;
+        padding: 5px 15vw;
+    }
+}
