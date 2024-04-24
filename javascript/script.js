@@ -11,20 +11,20 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const menuButton = document.querySelectorAll('.menu-button');
+const menuButton = document.querySelector('.menu-button');
 
 
-for(const button of menuButton){
-    button.addEventListener('click', () => {
-        const sidebar = document.querySelector('.sidebar');
-    
-        sidebar.style.display = 'block'
-        window.scrollTo({
-            top: 0
-        });
-        disableScroll();
+
+menuButton.addEventListener('click', () => {
+    const sidebar = document.querySelector('.sidebar');
+
+    sidebar.style.display = 'block'
+    window.scrollTo({
+        top: 0
     });
-}
+    disableScroll();
+});
+
 const closeButton = document.querySelector('.close-button');
     
 closeButton.addEventListener('click', () => {
