@@ -41,10 +41,23 @@ h3{
     border-top-right-radius: 6px;
     margin-bottom: 20px;
 }
-.illustration-image{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.illustration-image-container1{
+    background-image: url('../obrázky/illustration-image1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.illustration-image-container2{
+    background-image: url('../obrázky/illustration-image2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.illustration-image-container3{
+    background-image: url('../obrázky/illustration-image3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .button-container{
     padding: 0 20px;

@@ -36,7 +36,7 @@ h2{
 }
 .player-info{
     display: grid;
-    grid-template-columns: 40px 60px 30px;
+    grid-template-columns: 40px 60px 170px;
     align-items: center;
 }
 .player-stats{
