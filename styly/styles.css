@@ -5,7 +5,7 @@ body {
 }
 
 .top-header {
-    background-image: url("/obrázky/header-background2.png");
+    background-image: url("../obrázky/header-background2.png");
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     height: 300px;

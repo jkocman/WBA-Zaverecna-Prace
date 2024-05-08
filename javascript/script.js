@@ -11,19 +11,20 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const menuButton = document.querySelector('.menu-button');
+const menuButtons = document.querySelectorAll('.menu-button');
 
 
-
-menuButton.addEventListener('click', () => {
-    const sidebar = document.querySelector('.sidebar');
-
-    sidebar.style.display = 'block'
-    window.scrollTo({
-        top: 0
+for(const menuButton of menuButtons){
+    menuButton.addEventListener('click', () => {
+        const sidebar = document.querySelector('.sidebar');
+    
+        sidebar.style.display = 'block'
+        window.scrollTo({
+            top: 0
+        });
+        disableScroll();
     });
-    disableScroll();
-});
+}
 
 const closeButton = document.querySelector('.close-button');
     
@@ -38,37 +39,12 @@ closeButton.addEventListener('click', () => {
 
 
 
-let rootElement = document.documentElement;
-
-
 function disableScroll() {
-
-    let scrollTop = window.pageYOffset || rootElement.scrollTop;
-    let scrollLeft = window.pageXOffset || rootElement.scrollLeft;
-
-
-    rootElement.dataset.scrollY = scrollTop;
-    rootElement.dataset.scrollX = scrollLeft;
-
-
-    rootElement.style.position = 'fixed';
-    rootElement.style.overflow = 'hidden';
-    rootElement.style.top = -scrollTop + 'px';
-    rootElement.style.left = -scrollLeft + 'px';
+    document.body.style.overflow = 'hidden';
+    document.body.style.height = '100%';
 }
 
-
 function enableScroll() {
-
-    let scrollTop = parseInt(rootElement.dataset.scrollY || '0', 10);
-    let scrollLeft = parseInt(rootElement.dataset.scrollX || '0', 10);
-
-
-    rootElement.style.position = '';
-    rootElement.style.overflow = '';
-    rootElement.style.top = '';
-    rootElement.style.left = '';
-
-
-    window.scrollTo(scrollLeft, scrollTop);
+    document.body.style.overflow = '';
+    document.body.style.height = '';
 }
