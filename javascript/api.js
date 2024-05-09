@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/leaderboard')
+fetch('https://osu-api.onrender.com/leaderboard')
     .then(response => response.json())
     .then(data => {
         console.log(data);
