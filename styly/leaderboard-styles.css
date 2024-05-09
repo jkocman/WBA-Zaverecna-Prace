@@ -82,9 +82,6 @@ h2{
     }
 }
 @media(max-width: 357px){
-    .leaderboard-player{
-        font-size: 15px;
-    }
     .player-info{
         grid-template-columns: 40px;
         gap: 0;

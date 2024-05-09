@@ -301,6 +301,10 @@ main {
     .menu-button{
         display: block;
     }
+    main{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 @media(max-width: 400px){
     .sidebar{
