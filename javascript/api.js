@@ -1,4 +1,7 @@
-const url = new URL(
+/* KÓD JE ZAKOMENTOVANÝ KVŮLI DEPLOYMENTU NA GITHUB PAGES, ABY STRÁNKA NEBYLA DYNAMICKÁ */
+
+
+/*const url = new URL(
     "https://osu.ppy.sh/oauth/token"
 );
 
@@ -18,7 +21,6 @@ fetch(url, {
     method: "POST",
     headers,
     body: body,
-    mode: 'no-cors'
 })
 .then(response => response.json())
 .then(data => {
@@ -47,4 +49,4 @@ fetch(url, {
 })
 .catch(error => {
     console.error("Error fetching access token:", error);
-});
+});*/
