@@ -145,6 +145,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 .contact{
     margin-left: 250px;

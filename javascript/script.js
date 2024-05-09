@@ -1,4 +1,3 @@
-
 window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset || document.documentElement.scrollTop;
     let header = document.querySelector('.scroll-header')
@@ -48,19 +47,3 @@ function enableScroll() {
     document.body.style.overflow = '';
     document.body.style.height = '';
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('.header-text, .scroll-header-text, .sidebar-text');
-    
-    links.forEach(link => {
-        link.addEventListener('click', e => {
-            e.preventDefault();
-            const href = link.getAttribute('href');
-
-            document.body.classList.add('fade-out');
-            setTimeout(() => {
-                window.location.href = href;
-            }, 300);
-        });
-    });
-});
