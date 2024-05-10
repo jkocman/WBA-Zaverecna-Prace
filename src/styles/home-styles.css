@@ -42,19 +42,19 @@ h3{
     margin-bottom: 20px;
 }
 .illustration-image-container1{
-    background-image: url('../obrázky/illustration-image1.png');
+    background-image: url('../images/illustration-image1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .illustration-image-container2{
-    background-image: url('../obrázky/illustration-image2.png');
+    background-image: url('../images/illustration-image2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .illustration-image-container3{
-    background-image: url('../obrázky/illustration-image3.png');
+    background-image: url('../images/illustration-image3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

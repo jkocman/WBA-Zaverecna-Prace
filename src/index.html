@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osu! leaderboard</title>
+    <title>Osu! home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +13,18 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    <link rel="stylesheet" href="styly/styles.css">
-    <link rel="stylesheet" href="styly/leaderboard-styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home-styles.css">
 </head>
 <body>
     <header class="top-header">
         <section class="top-header-container">
             <section class="logo-container">
-                <img class="logo" src="obrázky/71skjg3qklec1.png" alt="Nelze Načíst">
+                <a href="index.html">
+                    <img class="logo" src="images/71skjg3qklec1.png" alt="osu logo">
+                </a>
             </section>
-            <nav class="navigation">
+            <nav>
                 <ul class="nav-bar">
                     <li>
                         <a class="header-text" href="index.html">domů</a>
@@ -43,7 +45,7 @@
     <header class="scroll-header">
         <section class="scroll-header-container">
             <section class="logo-container">
-                <img class="scroll-logo" src="obrázky/71skjg3qklec1.png" alt="Nelze Načíst">
+                <img class="scroll-logo" src="images/71skjg3qklec1.png" alt="osu logo">
             </section>
             <nav class="navigation">
                 <ul class="nav-bar">
@@ -82,24 +84,55 @@
     <main>
         <section>
             <section class="site-info">
-                <i class="fa-solid fa-medal"></i>
-                <h1>žebříček</h1>
+                <i class="fa-solid fa-house"></i>
+                <h1>domovská stránka</h1>
             </section>
             <section class="site-content">
                 <section class="heading-container">
-                    <i class="fa-solid fa-ranking-star"></i>
-                    <h2>nejlepší hráči</h2>
+                    <i class="fa-solid fa-list"></i>
+                    <h2>co na stránce najdete</h2>
                 </section>
-                <article class="leaderboard">
-                    <section class="leaderboard-explanation">
-                        <p class="explanation-accuracy">přesnost</p>
-                        <p>výkon</p>
+                <section class="info-block">
+                    <section class="illustration-image-container illustration-image-container1">
                     </section>
-                    <section class="loading-indicator">
-                        <div class="spinner"></div>
-                        <p>Načítání..</p>
+                    <section class="sub-heading-container">
+                        <h3>Žebříček</h3>
                     </section>
-                </article>
+                    <section class="discription-container">
+                        <p class="discription">
+                            dozvíš se kdo jsou nejlepší hráči ne světě
+                        </p>
+                    </section>
+                    <section class="button-container">
+                        <a class="more-button" href="leaderboard.html">Více ></a>
+                    </section>
+                </section>
+                <section class="info-block">
+                    <section class="illustration-image-container illustration-image-container2">
+                    </section>
+                    <section class="sub-heading-container">
+                        <h3>Informace o hře</h3>
+                    </section>
+                    <section class="discription-container">
+                        <p class="discription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quod consequatur dolore distinctio, minus nisi sapiente iusto obcaecati iste quidem similique! Reprehenderit aspernatur sapiente officia distinctio molestiae quam facere quos!</p>
+                    </section>
+                    <section class="button-container">
+                        <a class="more-button" href="about.html">Více ></a>
+                    </section>
+                </section>
+                <section class="info-block">
+                    <section class="illustration-image-container illustration-image-container3">
+                    </section>
+                    <section class="sub-heading-container">
+                        <h3>Stáhni si osu!</h3>
+                    </section>
+                    <section class="discription-container">
+                        <p class="discription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, quod consequatur dolore distinctio, minus nisi sapiente iusto obcaecati iste quidem similique! Reprehenderit aspernatur sapiente officia distinctio molestiae quam facere quos!</p>
+                    </section>
+                    <section class="button-container">
+                        <a class="more-button" href="https://m1.ppy.sh/r/osu!install.exe" target="_blank">Více ></a>
+                    </section>
+                </section>
             </section>
         </section>
     </main>
@@ -114,6 +147,5 @@
     </footer>
 
     <script type="module" src="javascript/script.js"></script>
-    <script type="module" src="javascript/api.js"></script>
 </body>
 </html>

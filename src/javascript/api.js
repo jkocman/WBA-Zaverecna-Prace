@@ -58,79 +58,79 @@ fetch('https://osu-api.onrender.com/leaderboard')
         let i = 1;
         for(const a of data.ranking){
             console.log(a.user.username);
-            let b = '';
+            let flagPath = '';
             
             switch(a.user.country.name) {
                 case 'Australia':
-                    b = 'obrázky/flags/Australia.png';
+                    flagPath = 'images/flags/Australia.png';
                     break;
                 case 'Brazil':
-                    b = 'obrázky/flags/Brazil.png';
+                    flagPath = 'images/flags/Brazil.png';
                     break;
                 case 'Canada':
-                    b = 'obrázky/flags/Canada.png';
+                    flagPath = 'images/flags/Canada.png';
                     break;
                 case 'Chile':
-                    b = 'obrázky/flags/Chile.png';
+                    flagPath = 'images/flags/Chile.png';
                     break;
                 case 'Germany':
-                    b = 'obrázky/flags/Germany.png';
+                    flagPath = 'images/flags/Germany.png';
                     break;
                 case 'Indonesia':
-                    b = 'obrázky/flags/Indonesia.png';
+                    flagPath = 'images/flags/Indonesia.png';
                     break;
                 case 'Japan':
-                    b = 'obrázky/flags/Japan.png';
+                    flagPath = 'images/flags/Japan.png';
                     break;
                 case 'Kazakhstan':
-                    b = 'obrázky/flags/Kazakhstan.png';
+                    flagPath = 'images/flags/Kazakhstan.png';
                     break;
                 case 'Malaysia':
-                    b = 'obrázky/flags/Malaysia.png';
+                    flagPath = 'images/flags/Malaysia.png';
                     break;
                 case 'Netherlands':
-                    b = 'obrázky/flags/Netherlands.png';
+                    flagPath = 'images/flags/Netherlands.png';
                     break;
                 case 'New Zealand':
-                    b = 'obrázky/flags/NewZealand.png';
+                    flagPath = 'images/flags/NewZealand.png';
                     break;
                 case 'Norway':
-                    b = 'obrázky/flags/Norway.png';
+                    flagPath = 'images/flags/Norway.png';
                     break;
                 case 'Peru':
-                    b = 'obrázky/flags/Peru.png';
+                    flagPath = 'images/flags/Peru.png';
                     break;
                 case 'Philippines':
-                    b = 'obrázky/flags/Philippines.png';
+                    flagPath = 'images/flags/Philippines.png';
                     break;
                 case 'Poland':
-                    b = 'obrázky/flags/Poland.png';
+                    flagPath = 'images/flags/Poland.png';
                     break;
                 case 'Qatar':
-                    b = 'obrázky/flags/Qatar.png';
+                    flagPath = 'images/flags/Qatar.png';
                     break;
                 case 'Russian Federation':
-                    b = 'obrázky/flags/Russia.png';
+                    flagPath = 'images/flags/Russia.png';
                     break;
                 case 'South Korea':
-                    b = 'obrázky/flags/SouthKorea.png';
+                    flagPath = 'images/flags/SouthKorea.png';
                     break;
                 case 'Spain':
-                    b = 'obrázky/flags/Spain.png';
+                    flagPath = 'images/flags/Spain.png';
                     break;
                 case 'United Kingdom':
-                    b = 'obrázky/flags/UK.png';
+                    flagPath = 'images/flags/UK.png';
                     break;
                 case 'United States':
-                    b = 'obrázky/flags/US.png';
+                    flagPath = 'images/flags/US.png';
                     break;
                 default:
-                    b = 'obrázky/flags/US.png'
+                    flagPath = a.user.country.name
             }
 
             var leaderboardPlayer = createLeaderboardPlayer(
                 i,
-                b,
+                flagPath,
                 a.user.username,
                 a.hit_accuracy.toFixed(2) + '%',
                 Math.round(a.pp),
