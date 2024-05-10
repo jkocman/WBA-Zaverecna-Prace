@@ -39,12 +39,18 @@ function createLeaderboardPlayer(rank, flagSrc, playerName, accuracy, score) {
     return section;
 }
 
+
 let leaderboardContainer = document.querySelector('.leaderboard');
 
+let loadingIndicator = document.querySelector('.loading-indicator');
+let leaderboardExplanation = document.querySelector('.leaderboard-explanation');
 
 fetch('https://osu-api.onrender.com/leaderboard')
     .then(response => response.json())
     .then(data => {
+        loadingIndicator.remove();
+        leaderboardExplanation.style.display = 'grid'
+
         console.log(data);
         let i = 1;
         for(const a of data.ranking){
@@ -62,4 +68,4 @@ fetch('https://osu-api.onrender.com/leaderboard')
     })
     .catch(error => {
         console.error('Error fetching leaderboard data:', error);
-    }); 
+    });
