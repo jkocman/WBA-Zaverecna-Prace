@@ -40,16 +40,19 @@ function createLeaderboardPlayer(rank, flagSrc, playerName, accuracy, score) {
 }
 
 
-let leaderboardContainer = document.querySelector('.leaderboard');
+const leaderboardContainer = document.querySelector('.leaderboard');
 
-let loadingIndicator = document.querySelector('.loading-indicator');
-let leaderboardExplanation = document.querySelector('.leaderboard-explanation');
+const loadingIndicator = document.querySelector('.loading-indicator');
+const leaderboardExplanation = document.querySelector('.leaderboard-explanation');
+const footer = document.querySelector('.footer');
+
 
 fetch('https://osu-api.onrender.com/leaderboard')
     .then(response => response.json())
     .then(data => {
         loadingIndicator.remove();
-        leaderboardExplanation.style.display = 'grid'
+        leaderboardExplanation.style.display = 'grid';
+        footer.style.position = 'relative';
 
         console.log(data);
         let i = 1;
