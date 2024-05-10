@@ -49,6 +49,7 @@ h2{
 }
 .flag-image{
     width: 55px;
+    height: 30px;
     border-radius: 8px;
 }
 .accuracy{

@@ -17,16 +17,16 @@ h2{
     font-size: 30px;
 }
 .illustration-image{
-    margin-left: 6vw;
-    width: 80%;
+    margin-left: 8%;
+    width: 85%;
     height: 500px;
     object-fit: cover;
     margin-bottom: 20px;
     border-radius: 6px;
 }
 .info-about-game-article{
-    margin-left: 6vw;
-    width: 80%;
+    margin-left: 8%;
+    width: 85%;
     display: flex;
     justify-content: center;
     flex-direction: column;
