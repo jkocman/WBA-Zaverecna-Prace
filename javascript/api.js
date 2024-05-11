@@ -47,12 +47,14 @@ const leaderboardExplanation = document.querySelector('.leaderboard-explanation'
 const footer = document.querySelector('.footer');
 
 
+
+// Bohužel načtení dat může trvat až 50 sekund kvůli free hostingu, který se po 15ti minutách stane neaktivní
 fetch('https://osu-api.onrender.com/leaderboard')
     .then(response => response.json())
     .then(data => {
         loadingIndicator.remove();
         leaderboardExplanation.style.display = 'grid';
-        footer.style.position = 'relative';
+        footer.style.position = 'relative'
 
         console.log(data);
         let i = 1;
