@@ -44,7 +44,7 @@ const leaderboardContainer = document.querySelector('.leaderboard');
 
 const loadingIndicator = document.querySelector('.loading-indicator');
 const leaderboardExplanation = document.querySelector('.leaderboard-explanation');
-const footer = document.querySelector('.footer');
+const footer = document.querySelector('footer');
 
 
 

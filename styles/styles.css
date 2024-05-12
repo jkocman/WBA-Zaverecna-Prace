@@ -135,7 +135,7 @@ main {
     border-bottom-right-radius: 10px;
     box-shadow: 0px 0px 5px 5px #32115c2a;
 }
-.footer{
+footer{
     background-color: black;
     border-top: 1px solid rgb(59, 59, 59);
     height: 150px;
@@ -299,6 +299,23 @@ main {
         margin-left: 0;
         margin-right: 0;
     }
+    .nav-bar{
+        margin-right: 0;
+    }
+    
+    .logo {
+        margin-left: 0;
+    }
+    .scroll-logo{
+        margin-left: 0;
+    }
+    .contact{
+        margin-left: 0;
+    }
+    .footer-icons{
+        margin-right: 0;
+    }
+
 }
 @media(max-width: 400px){
     .sidebar{
